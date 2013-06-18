@@ -61,7 +61,7 @@
 
 (defvar timesheet-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-S-<return>") 'mark-start-of-day)
+	(define-key map (kbd "C-S-<return>") 'mark-start-of-day)
 	(define-key map (kbd "C-<return>") 'mark-start-of-slot)
     map)
   "Keymap for timesheet major mode")
@@ -86,6 +86,8 @@
 	 1 font-lock-comment-face)
    '("^[ ]*\\(!.*\\)$"
 	 1 font-lock-warning-face)
+   '("^[ ]*\\(*.*\\)$"
+	 1 font-lock-keyword-face)
    '("^\\(---.*---\\)$"
 	 1 font-lock-function-name-face))
   "Highlighting for timesheet mode")
