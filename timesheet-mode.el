@@ -72,7 +72,7 @@
 
 (defconst timesheet-months
   (eval-when-compile
-	(regexp-opt '("Jan" "Feb" "Mar" "Apr" "May" "Jun" "Aug" "Sep" "Oct" "Nov" "Dec"))))
+	(regexp-opt '("Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"))))
 
 (defconst timesheet-font-lock-keywords
   (list
